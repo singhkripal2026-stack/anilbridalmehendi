@@ -1,0 +1,2139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>Anil Bridal Mehendi Artist | Party & Family Mehendi Album</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <style>
+      :root {
+        --maroon-dark: #1f0509;
+        --maroon-deep: #2f080e;
+        --maroon-light: #481119;
+        --gold-primary: #d4a359;
+        --gold-light: #f7e4ba;
+        --gold-dark: #aa7a32;
+        --cream-bg: #fcf8f2;
+        --text-dark: #241215;
+        --text-light: #fdfaf6;
+        --text-muted: #948280;
+        --transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+        --font-serif: "Playfair Display", serif;
+        --font-royal: "Cinzel", serif;
+        --font-script: "Great Vibes", cursive;
+        --font-sans: "Poppins", sans-serif;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      body {
+        font-family: var(--font-sans);
+        background-color: var(--maroon-dark);
+        color: var(--text-light);
+        overflow-x: hidden;
+        line-height: 1.6;
+        width: 100%;
+      }
+
+      body.modal-open {
+        overflow: hidden;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      /* ========================================================
+         TOP BANNER (Responsive for small phones)
+         ======================================================== */
+      .top-banner {
+        background: linear-gradient(90deg, #140205, #35080f, #140205);
+        border-bottom: 1px solid rgba(212, 163, 89, 0.25);
+        font-size: 0.82rem;
+        padding: 8px 4%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 6px;
+        color: var(--gold-light);
+      }
+      .top-banner-phones {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .top-banner-phones a {
+        color: var(--gold-light);
+        font-weight: 500;
+        transition: var(--transition);
+      }
+      .top-banner-phones a:hover {
+        color: #fff;
+      }
+
+      /* ========================================================
+         HEADER & NAVIGATION
+         ======================================================== */
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background: rgba(31, 5, 9, 0.96);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(212, 163, 89, 0.25);
+        transition: var(--transition);
+      }
+      .nav-container {
+        max-width: 1300px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5%;
+      }
+      .logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .logo-main {
+        font-family: var(--font-script);
+        font-size: clamp(2rem, 5vw, 2.5rem);
+        color: var(--gold-light);
+        line-height: 1;
+        text-shadow: 0 0 10px rgba(212, 163, 89, 0.4);
+      }
+      .logo-sub {
+        font-family: var(--font-royal);
+        font-size: 0.62rem;
+        letter-spacing: 3px;
+        color: #dfcdb5;
+        text-transform: uppercase;
+        margin-top: 2px;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 22px;
+        align-items: center;
+      }
+      nav ul li a {
+        font-size: 0.9rem;
+        color: #e8d5c4;
+        transition: var(--transition);
+        position: relative;
+        padding-bottom: 4px;
+      }
+      nav ul li a:hover,
+      nav ul li a.active {
+        color: var(--gold-light);
+      }
+      .btn-book-nav {
+        background: linear-gradient(135deg, #dfad62, #b87d2d);
+        color: #1f0509;
+        font-weight: 600;
+        font-size: 0.85rem;
+        padding: 8px 20px;
+        border-radius: 30px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        box-shadow: 0 4px 15px rgba(212, 163, 89, 0.35);
+        transition: var(--transition);
+      }
+      .btn-book-nav:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(212, 163, 89, 0.55);
+      }
+      .mobile-toggle {
+        display: none;
+        font-size: 1.5rem;
+        color: var(--gold-light);
+        cursor: pointer;
+        padding: 6px;
+      }
+
+      /* ========================================================
+         HERO SECTION
+         ======================================================== */
+      .hero {
+        position: relative;
+        background:
+          radial-gradient(
+            circle at 75% 40%,
+            rgba(72, 17, 25, 0.6) 0%,
+            rgba(31, 5, 9, 0.98) 75%
+          ),
+          url("photo/img1.jpeg") center right/cover no-repeat;
+        min-height: 75vh;
+        display: flex;
+        align-items: center;
+        padding: 50px 5%;
+        border-bottom: 2px solid rgba(212, 163, 89, 0.25);
+      }
+      .hero-content {
+        max-width: 650px;
+        z-index: 2;
+      }
+      .hero-tagline {
+        font-family: var(--font-royal);
+        font-size: 0.82rem;
+        letter-spacing: 3px;
+        color: var(--gold-light);
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .hero-tagline::before,
+      .hero-tagline::after {
+        content: "❖";
+        color: var(--gold-primary);
+        font-size: 0.65rem;
+      }
+      .hero-title {
+        font-family: var(--font-serif);
+        font-size: clamp(2rem, 6vw, 3.2rem);
+        line-height: 1.15;
+        color: #fff;
+        margin-bottom: 6px;
+      }
+      .hero-title-script {
+        display: block;
+        font-family: var(--font-script);
+        font-size: clamp(3rem, 9vw, 4.5rem);
+        color: var(--gold-light);
+        line-height: 1.1;
+        font-weight: 400;
+      }
+      .hero-desc {
+        font-size: clamp(0.88rem, 2.5vw, 1rem);
+        color: #e6d3c2;
+        margin: 18px 0 28px;
+        font-weight: 300;
+        line-height: 1.65;
+      }
+      .hero-actions {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+      .btn-gold {
+        background: linear-gradient(135deg, #dfad62, #b87d2d);
+        color: #1f0509;
+        font-weight: 600;
+        padding: 12px 26px;
+        border-radius: 35px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition: var(--transition);
+        box-shadow: 0 4px 18px rgba(212, 163, 89, 0.35);
+        font-size: 0.92rem;
+      }
+      .btn-gold:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 22px rgba(212, 163, 89, 0.5);
+      }
+      .btn-outline {
+        border: 1px solid var(--gold-primary);
+        color: var(--gold-light);
+        font-weight: 500;
+        padding: 12px 26px;
+        border-radius: 35px;
+        background: rgba(31, 5, 9, 0.45);
+        backdrop-filter: blur(5px);
+        transition: var(--transition);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.92rem;
+      }
+      .btn-outline:hover {
+        background: rgba(212, 163, 89, 0.15);
+        color: #fff;
+      }
+
+      /* Section Decorator */
+      .section-header {
+        text-align: center;
+        margin-bottom: 35px;
+        padding: 0 4%;
+      }
+      .section-subtitle {
+        font-family: var(--font-script);
+        font-size: clamp(2.2rem, 6vw, 2.8rem);
+        color: var(--gold-primary);
+        line-height: 1;
+        margin-bottom: 4px;
+      }
+      .section-title {
+        font-family: var(--font-serif);
+        font-size: clamp(1.5rem, 4vw, 2rem);
+        color: inherit;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+      }
+      .section-tagline {
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        margin-top: 6px;
+      }
+      .divider-motif {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 8px;
+      }
+      .divider-motif span {
+        width: 35px;
+        height: 1px;
+        background: var(--gold-primary);
+        opacity: 0.6;
+      }
+
+      /* ========================================================
+         2 OPTIONS MAIN SERVICE SECTION (RESPONSIVE)
+         ======================================================== */
+      .services-section {
+        background-color: var(--cream-bg);
+        color: var(--text-dark);
+        padding: 70px 5%;
+      }
+      .two-options-grid {
+        max-width: 1100px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 25px;
+      }
+      .service-album-card {
+        background: #ffffff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(72, 17, 25, 0.08);
+        border: 1px solid rgba(212, 163, 89, 0.35);
+        transition: var(--transition);
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+      }
+      .service-album-card:hover {
+        transform: translateY(-7px);
+        box-shadow: 0 18px 45px rgba(72, 17, 25, 0.18);
+        border-color: var(--gold-dark);
+      }
+      .card-media-wrap {
+        position: relative;
+        width: 100%;
+        height: 280px;
+        overflow: hidden;
+      }
+      .card-media-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+      }
+      .service-album-card:hover .card-media-wrap img {
+        transform: scale(1.08);
+      }
+      .card-media-gradient {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to top,
+          rgba(31, 5, 9, 0.88) 0%,
+          rgba(31, 5, 9, 0.25) 50%,
+          transparent 100%
+        );
+      }
+      .card-badge {
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        background: rgba(31, 5, 9, 0.85);
+        border: 1px solid var(--gold-primary);
+        color: var(--gold-light);
+        font-family: var(--font-royal);
+        font-size: 0.7rem;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        padding: 5px 12px;
+        border-radius: 20px;
+      }
+      .card-count-badge {
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        background: linear-gradient(135deg, #dfad62, #b87d2d);
+        color: #1f0509;
+        font-size: 0.74rem;
+        font-weight: 700;
+        padding: 5px 12px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .card-media-title {
+        position: absolute;
+        bottom: 16px;
+        left: 20px;
+        right: 20px;
+        color: #fff;
+      }
+      .card-media-title h3 {
+        font-family: var(--font-serif);
+        font-size: 1.8rem;
+        line-height: 1.15;
+      }
+      .card-media-title p {
+        color: var(--gold-light);
+        font-size: 0.85rem;
+      }
+      .card-body {
+        padding: 22px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+        gap: 16px;
+      }
+      .card-desc {
+        font-size: 0.9rem;
+        color: #5c4749;
+        line-height: 1.5;
+      }
+      .btn-open-album {
+        background: linear-gradient(135deg, #2f080e, #1f0509);
+        color: var(--gold-light);
+        padding: 11px 22px;
+        border-radius: 25px;
+        font-size: 0.88rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid var(--gold-primary);
+        transition: var(--transition);
+      }
+      .service-album-card:hover .btn-open-album {
+        background: linear-gradient(135deg, #dfad62, #b87d2d);
+        color: #1f0509;
+      }
+
+      /* ========================================================
+         WHY CHOOSE SECTION (RESPONSIVE)
+         ======================================================== */
+      .why-us-section {
+        background: linear-gradient(135deg, #1f0509 0%, #350910 100%);
+        padding: 65px 5%;
+        border-top: 1px solid rgba(212, 163, 89, 0.2);
+        border-bottom: 1px solid rgba(212, 163, 89, 0.2);
+      }
+      .why-us-container {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 40px;
+        align-items: center;
+      }
+      .why-us-left h2 {
+        font-family: var(--font-serif);
+        font-size: clamp(1.8rem, 4vw, 2.2rem);
+        color: #fff;
+        line-height: 1.3;
+        margin-bottom: 12px;
+      }
+      .why-us-left h2 span {
+        color: var(--gold-light);
+      }
+      .why-us-left p {
+        color: #d8c3b7;
+        font-size: 0.92rem;
+        margin-bottom: 20px;
+      }
+      .why-us-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        border-left: 1px solid rgba(212, 163, 89, 0.25);
+        padding-left: 25px;
+      }
+      .why-feature {
+        text-align: center;
+      }
+      .why-feature-icon {
+        width: 52px;
+        height: 52px;
+        margin: 0 auto 12px;
+        border: 1px solid var(--gold-primary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--gold-light);
+        font-size: 1.2rem;
+        background: rgba(212, 163, 89, 0.08);
+      }
+      .why-feature h4 {
+        font-family: var(--font-serif);
+        font-size: 0.92rem;
+        color: #ffffff;
+        margin-bottom: 4px;
+      }
+      .why-feature p {
+        font-size: 0.78rem;
+        color: #bfab9f;
+        line-height: 1.35;
+      }
+
+      /* ========================================================
+         DESTINATION MEHENDI SECTION
+         ======================================================== */
+      .destination-section {
+        background-color: #faf3eb;
+        color: var(--text-dark);
+        padding: 70px 5%;
+      }
+      .destination-container {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+      }
+      .dest-title-script {
+        font-family: var(--font-script);
+        font-size: clamp(2.5rem, 6vw, 3.2rem);
+        color: var(--maroon-deep);
+        line-height: 1;
+      }
+      .dest-title {
+        font-family: var(--font-serif);
+        font-size: clamp(1.8rem, 4vw, 2.2rem);
+        color: var(--maroon-dark);
+        margin-bottom: 14px;
+      }
+      .dest-desc {
+        color: #554446;
+        font-size: 0.93rem;
+        line-height: 1.6;
+        margin-bottom: 24px;
+      }
+      .dest-features-list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 14px;
+        margin-bottom: 25px;
+      }
+      .dest-features-list li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.88rem;
+        color: #3b2024;
+        font-weight: 500;
+      }
+      .dest-features-list li i {
+        color: var(--maroon-light);
+      }
+      .dest-visual-wrap {
+        position: relative;
+        display: flex;
+        justify-content: center;
+      }
+      .dest-main-img {
+        width: 90%;
+        max-height: 360px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+        border: 4px solid #fff;
+      }
+
+      /* ========================================================
+         TESTIMONIALS SECTION
+         ======================================================== */
+      .testimonials-section {
+        background-color: var(--cream-bg);
+        color: var(--text-dark);
+        padding: 70px 5%;
+      }
+      .testimonials-grid {
+        max-width: 1150px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+      }
+      .testimonial-card {
+        background: #ffffff;
+        border: 1px solid rgba(212, 163, 89, 0.3);
+        border-radius: 16px;
+        padding: 22px 18px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+        display: flex;
+        gap: 14px;
+        align-items: flex-start;
+      }
+      .client-avatar {
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid var(--gold-primary);
+        flex-shrink: 0;
+      }
+      .quote-icon {
+        color: var(--gold-primary);
+        font-size: 1rem;
+        margin-bottom: 4px;
+      }
+      .client-text {
+        font-style: italic;
+        color: #584547;
+        font-size: 0.85rem;
+        line-height: 1.45;
+        margin-bottom: 8px;
+      }
+      .client-name {
+        font-family: var(--font-serif);
+        font-weight: 700;
+        color: var(--maroon-dark);
+        font-size: 0.92rem;
+      }
+      .client-role {
+        font-size: 0.75rem;
+        color: var(--text-muted);
+      }
+
+      /* ========================================================
+         BOOKING SECTION (SERVICE TYPE FIELD COMPLETELY REMOVED)
+         ======================================================== */
+      .booking-section {
+        background: linear-gradient(135deg, #160205, #2f070e);
+        border-top: 2px solid rgba(212, 163, 89, 0.3);
+        padding: 55px 5%;
+      }
+      .booking-card-wrapper {
+        max-width: 1100px;
+        margin: auto;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(212, 163, 89, 0.3);
+        border-radius: 18px;
+        padding: 30px 25px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+        align-items: center;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+      }
+      .booking-header h3 {
+        font-family: var(--font-serif);
+        font-size: clamp(1.5rem, 4vw, 1.8rem);
+        color: var(--gold-light);
+        margin-bottom: 4px;
+      }
+      .booking-header p {
+        font-size: 0.88rem;
+        color: #cbbaa9;
+        margin-bottom: 20px;
+      }
+      .booking-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+      .input-group label {
+        display: block;
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+        color: var(--gold-light);
+        text-transform: uppercase;
+        margin-bottom: 4px;
+      }
+      .input-group input {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(212, 163, 89, 0.4);
+        color: #ffffff;
+        padding: 10px 12px;
+        border-radius: 8px;
+        font-family: var(--font-sans);
+        font-size: 0.9rem;
+        outline: none;
+        transition: var(--transition);
+      }
+      .input-group input:focus {
+        border-color: var(--gold-light);
+        background: rgba(255, 255, 255, 0.14);
+      }
+      .booking-btn-wrap {
+        grid-column: span 2;
+        margin-top: 6px;
+      }
+      .btn-submit-wa {
+        width: 100%;
+        background: linear-gradient(135deg, #25d366, #128c7e);
+        color: white;
+        border: none;
+        padding: 13px;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        transition: var(--transition);
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+      }
+      .btn-submit-wa:hover {
+        transform: translateY(-2px);
+        background: linear-gradient(135deg, #2ae06d, #149a8b);
+      }
+      .booking-side-quote {
+        text-align: center;
+        border-left: 1px solid rgba(212, 163, 89, 0.3);
+        padding-left: 20px;
+      }
+      .booking-side-quote h4 {
+        font-family: var(--font-serif);
+        font-size: 1.5rem;
+        color: var(--gold-light);
+      }
+      .booking-side-quote p {
+        font-family: var(--font-script);
+        font-size: 2rem;
+        color: #fff;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #0f0204;
+        padding: 50px 5% 20px;
+        border-top: 1px solid rgba(212, 163, 89, 0.2);
+      }
+      .footer-content {
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+      }
+      .footer-phones {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        justify-content: center;
+      }
+      .footer-phone-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(212, 163, 89, 0.1);
+        border: 1px solid rgba(212, 163, 89, 0.3);
+        padding: 8px 18px;
+        border-radius: 25px;
+        color: var(--gold-light);
+        font-size: 0.9rem;
+      }
+      .social-links {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .social-btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(212, 163, 89, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--gold-light);
+        font-size: 1.1rem;
+        transition: var(--transition);
+      }
+      .social-btn:hover {
+        background: var(--gold-primary);
+        color: #1f0509;
+        transform: scale(1.1);
+      }
+      .footer-bottom {
+        width: 100%;
+        max-width: 1100px;
+        margin-top: 25px;
+        padding-top: 16px;
+        border-top: 1px solid rgba(212, 163, 89, 0.15);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.78rem;
+        color: #9c8a87;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      /* Floating WhatsApp Button */
+      .floating-wa {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
+        color: white;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.7rem;
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+        z-index: 1000;
+        transition: var(--transition);
+      }
+      .floating-wa:hover {
+        transform: scale(1.1);
+      }
+
+      /* ========================================================
+         MODERN VISUAL PHOTO ALBUM MODAL (LIKE ATTACHED IMAGE)
+         - No text clutter on photo cards
+         - Seamless staggered animation
+         - 2-column mobile layout, 3-column tablet, 4-column laptop
+         ======================================================== */
+      .album-gallery-modal {
+        position: fixed;
+        inset: 0;
+        z-index: 2000;
+        background: #0f0204;
+        overflow-y: auto;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.35s ease, visibility 0.35s ease;
+        padding-bottom: 60px;
+        -webkit-overflow-scrolling: touch;
+      }
+      .album-gallery-modal.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      /* Sticky Album Header Bar */
+      .album-header-bar {
+        position: sticky;
+        top: 0;
+        z-index: 2100;
+        background: rgba(15, 2, 4, 0.94);
+        border-bottom: 1px solid rgba(212, 163, 89, 0.3);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        padding: 10px 4%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+      }
+      .album-back-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--gold-light);
+        font-size: 0.85rem;
+        font-weight: 500;
+        cursor: pointer;
+        padding: 7px 16px;
+        border-radius: 20px;
+        border: 1px solid rgba(212, 163, 89, 0.4);
+        background: rgba(212, 163, 89, 0.08);
+      }
+      .album-title-text {
+        font-family: var(--font-royal);
+        font-size: clamp(0.78rem, 2.5vw, 0.95rem);
+        color: var(--gold-light);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .album-close-x {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(212, 163, 89, 0.3);
+        color: var(--gold-light);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        cursor: pointer;
+      }
+
+      .album-container {
+        max-width: 1300px;
+        margin: 18px auto 0;
+        padding: 0 3%;
+      }
+
+      /* Clean Switcher for 2 Collections */
+      .album-switcher {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 18px;
+      }
+      .album-switch-pill {
+        display: inline-flex;
+        background: rgba(35, 6, 11, 0.9);
+        border: 1px solid rgba(212, 163, 89, 0.4);
+        border-radius: 30px;
+        padding: 4px;
+        gap: 6px;
+      }
+      .album-switch-btn {
+        background: transparent;
+        color: #e5d2c4;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 25px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: var(--transition);
+      }
+      .album-switch-btn.active {
+        background: linear-gradient(135deg, #dfad62, #b87d2d);
+        color: #1f0509;
+        font-weight: 600;
+      }
+
+      /* ========================================================
+         PHOTO ALBUM GRID (JUST LIKE ATTACHED REFERENCE PHOTO)
+         Pure images, minimal gap, no text cards!
+         ======================================================== */
+      .photo-album-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+      }
+
+      .album-photo-item {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        background: #1b0407;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: albumFadeIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+
+      @keyframes albumFadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .album-photo-item img {
+        width: 100%;
+        height: 100%;
+        min-height: 220px;
+        max-height: 380px;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.5s ease;
+      }
+
+      .album-photo-item:hover img {
+        transform: scale(1.06);
+      }
+
+      .album-photo-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(20, 3, 6, 0.4);
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: var(--transition);
+      }
+      .album-photo-item:hover .album-photo-overlay {
+        opacity: 1;
+      }
+      .album-zoom-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: var(--gold-primary);
+        color: #1f0509;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        transform: scale(0.85);
+        transition: var(--transition);
+      }
+      .album-photo-item:hover .album-zoom-icon {
+        transform: scale(1);
+      }
+
+      /* Bottom WhatsApp Inquiry Card in Album */
+      .album-cta-box {
+        text-align: center;
+        padding: 30px 20px;
+        background: rgba(35, 6, 11, 0.6);
+        border: 1px solid rgba(212, 163, 89, 0.3);
+        border-radius: 16px;
+        margin-top: 30px;
+      }
+      .album-cta-box h4 {
+        font-family: var(--font-serif);
+        font-size: 1.4rem;
+        color: var(--gold-light);
+        margin-bottom: 6px;
+      }
+      .album-cta-box p {
+        color: #d1bead;
+        font-size: 0.88rem;
+        margin-bottom: 16px;
+      }
+
+      /* ========================================================
+         LIGHTBOX ZOOM (CLEAN & TOUCH-FRIENDLY)
+         ======================================================== */
+      .lightbox-modal {
+        position: fixed;
+        inset: 0;
+        z-index: 3000;
+        background: rgba(8, 1, 2, 0.97);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        padding: 12px 14px 16px;
+      }
+      .lightbox-modal.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .lb-top-bar {
+        width: 100%;
+        max-width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--gold-light);
+      }
+      .lb-counter {
+        font-size: 0.84rem;
+        letter-spacing: 1px;
+        font-family: var(--font-royal);
+      }
+      .lb-controls {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+      .lb-btn {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(212, 163, 89, 0.35);
+        color: var(--gold-light);
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.95rem;
+        cursor: pointer;
+      }
+      .lb-btn:hover {
+        background: var(--gold-primary);
+        color: #1f0509;
+      }
+
+      .lb-viewport {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 1000px;
+        flex-grow: 1;
+        overflow: hidden;
+      }
+      .lb-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: rgba(20, 2, 5, 0.8);
+        border: 1px solid var(--gold-primary);
+        color: var(--gold-light);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        cursor: pointer;
+        z-index: 20;
+      }
+      .lb-nav-prev {
+        left: 6px;
+      }
+      .lb-nav-next {
+        right: 6px;
+      }
+
+      .lb-img-wrap {
+        max-width: 90vw;
+        max-height: 68vh;
+        overflow: hidden;
+        border-radius: 10px;
+        border: 1px solid rgba(212, 163, 89, 0.5);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+        cursor: zoom-in;
+      }
+      .lb-img-wrap.is-zoomed {
+        cursor: zoom-out;
+      }
+      .lb-img-wrap img {
+        max-width: 88vw;
+        max-height: 66vh;
+        object-fit: contain;
+        display: block;
+        transition: transform 0.3s ease;
+        transform-origin: center center;
+      }
+
+      .lb-bottom-bar {
+        width: 100%;
+        max-width: 1000px;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+      }
+      .lb-wa-inquire {
+        background: linear-gradient(135deg, #25d366, #128c7e);
+        color: #fff;
+        padding: 9px 22px;
+        border-radius: 25px;
+        font-size: 0.88rem;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.35);
+      }
+
+      /* ========================================================
+         MEDIA QUERIES FOR PHONES, TABLETS & LAPTOPS
+         ======================================================== */
+      /* Tablets */
+      @media (max-width: 992px) {
+        .why-us-container,
+        .destination-container,
+        .booking-card-wrapper {
+          grid-template-columns: 1fr;
+          gap: 30px;
+        }
+        .why-us-grid {
+          border-left: none;
+          padding-left: 0;
+          border-top: 1px solid rgba(212, 163, 89, 0.25);
+          padding-top: 25px;
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .photo-album-grid {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 10px;
+        }
+        .booking-side-quote {
+          border-left: none;
+          border-top: 1px solid rgba(212, 163, 89, 0.3);
+          padding-left: 0;
+          padding-top: 20px;
+        }
+      }
+
+      /* Mobile Phones */
+      @media (max-width: 768px) {
+        .top-banner {
+          flex-direction: column;
+          text-align: center;
+          gap: 4px;
+        }
+        .mobile-toggle {
+          display: block;
+        }
+        nav ul {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background: #1a0307;
+          flex-direction: column;
+          padding: 20px 0;
+          gap: 16px;
+          border-bottom: 2px solid var(--gold-primary);
+          display: none;
+        }
+        nav ul.active {
+          display: flex;
+        }
+        .btn-book-nav {
+          display: none;
+        }
+        .hero {
+          min-height: auto;
+          padding: 45px 5%;
+          text-align: center;
+        }
+        .hero-tagline,
+        .hero-actions {
+          justify-content: center;
+        }
+        .dest-visual-wrap {
+          margin-top: 10px;
+        }
+        .booking-form {
+          grid-template-columns: 1fr;
+        }
+        .booking-btn-wrap {
+          grid-column: span 1;
+        }
+        /* Mobile phone album grid: 2 columns like uploaded photo reference */
+        .photo-album-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 8px;
+        }
+        .album-photo-item img {
+          min-height: 180px;
+          max-height: 240px;
+        }
+        .footer-bottom {
+          flex-direction: column;
+          text-align: center;
+        }
+        .lb-nav {
+          width: 38px;
+          height: 38px;
+          font-size: 1rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .album-switch-pill {
+          width: 100%;
+          justify-content: center;
+        }
+        .album-switch-pill {
+          gap: 2px;
+        }
+        .album-switch-btn {
+          padding: 8px 6px;
+          font-size: 0.74rem;
+          flex: 1;
+          text-align: center;
+          line-height: 1.2;
+        }
+        .photo-album-grid {
+          gap: 6px;
+        }
+        .album-photo-item img {
+          min-height: 160px;
+          max-height: 220px;
+        }
+        .lb-img-wrap img {
+          max-height: 58vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Announcement Bar -->
+    <div class="top-banner">
+      <div>
+        <i class="fa-solid fa-location-dot" style="margin-right: 4px"></i>
+        Available Pan-India & Worldwide Destination Weddings
+      </div>
+      <div class="top-banner-phones">
+        <span><i class="fa-solid fa-phone"></i> Booking:</span>
+        <a href="tel:+917508462053">+91 75084 62053</a>
+        <a href="tel:+917508465231">+91 75084 65231</a>
+      </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header>
+      <div class="nav-container">
+        <div class="logo-container">
+          <a href="#home" class="logo-main">Anil</a>
+          <span class="logo-sub">Bridal Mehendi Artist</span>
+        </div>
+
+        <nav>
+          <ul id="navMenu">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#destination">Destination</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#book">Book</a></li>
+          </ul>
+        </nav>
+
+        <a
+          href="https://wa.me/917508462053?text=Hello%20Anil%20Ji,%20I%20would%20like%20to%20inquire%20about%20booking%20mehendi."
+          target="_blank"
+          class="btn-book-nav"
+        >
+          <i class="fa-brands fa-whatsapp"></i> Book Now
+        </a>
+
+        <div class="mobile-toggle" id="mobileToggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-tagline">Traditional • Bridal • Destination</div>
+        <h1 class="hero-title">
+          Bridal Mehendi
+          <span class="hero-title-script">Beyond Borders</span>
+        </h1>
+        <p class="hero-desc">
+          Bringing the royal heritage of henna to your most cherished moments.
+          Specializing in Party Mehendi & complete Family Mehendi celebrations worldwide.
+        </p>
+        <div class="hero-actions">
+          <a href="#services" class="btn-gold">
+            <i class="fa-solid fa-images"></i> View Photo Albums
+          </a>
+          <a href="#book" class="btn-outline">
+            <i class="fa-brands fa-whatsapp"></i> Quick Booking
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SERVICES SECTION: 3 GRAND OPTIONS
+         1. Bridal Mehendi (Dulhan Full Hands & Feet)
+         2. Party Mehendi (Engagement, Sangeet & Festive)
+         3. Family Mehendi (Family, Guest & Custom)
+         ======================================================== -->
+    <section id="services" class="services-section">
+      <div class="section-header">
+        <span class="section-subtitle">Our Portfolios</span>
+        <h2 class="section-title">Select A Collection</h2>
+        <p class="section-tagline">
+          Click any option to view the 20+ photo album with interactive zoom
+        </p>
+        <div class="divider-motif"><span></span>❖<span></span></div>
+      </div>
+
+      <div class="two-options-grid">
+        <!-- Option 1: Bridal Mehendi -->
+        <div
+          class="service-album-card"
+          onclick="openAlbumGallery('bridal')"
+          title="Click to view Bridal Mehendi Album"
+        >
+          <div class="card-media-wrap">
+            <img src="photo/img1.jpeg" alt="Bridal Mehendi Album" />
+            <div class="card-media-gradient"></div>
+            <span class="card-badge">Bridal Collection</span>
+            <span class="card-count-badge">
+              <i class="fa-solid fa-camera"></i> 19 Photos
+            </span>
+            <div class="card-media-title">
+              <h3>Bridal Mehendi</h3>
+              <p>Royal Dulhan Hands & Feet</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-desc">
+              Intricate full-length bridal hands up to the elbows, Dulha-Dulhan portrait figures,
+              hidden groom's initials, and matching heavy feet designs for your wedding day.
+            </p>
+            <div class="btn-open-album">
+              <span>Open Photo Album</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Option 2: Party Mehendi -->
+        <div
+          class="service-album-card"
+          onclick="openAlbumGallery('party')"
+          title="Click to view Party Mehendi Album"
+        >
+          <div class="card-media-wrap">
+            <img src="photo/img5.png" alt="Party Mehendi Album" />
+            <div class="card-media-gradient"></div>
+            <span class="card-badge">Party Collection</span>
+            <span class="card-count-badge">
+              <i class="fa-solid fa-camera"></i> 20 Photos
+            </span>
+            <div class="card-media-title">
+              <h3>Party Mehendi</h3>
+              <p>Engagement, Sangeet & Festive Styles</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-desc">
+              Elegant Arabic trails, chic minimal finger patterns, and graceful designs for
+              engagements, sangeet nights, Karwa Chauth, Teej, Eid and every celebration.
+            </p>
+            <div class="btn-open-album">
+              <span>Open Photo Album</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Option 3: Family Mehendi -->
+        <div
+          class="service-album-card"
+          onclick="openAlbumGallery('family')"
+          title="Click to view Family Mehendi Album"
+        >
+          <div class="card-media-wrap">
+            <img src="photo/im.png" alt="Family Mehendi Album" />
+            <div class="card-media-gradient"></div>
+            <span class="card-badge">Family Collection</span>
+            <span class="card-count-badge">
+              <i class="fa-solid fa-camera"></i> 22+ Photos
+            </span>
+            <div class="card-media-title">
+              <h3>Family Mehendi</h3>
+              <p>Mothers, Sisters, Bhabhis & Guests</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-desc">
+              Graceful mandalas for mothers and bhabhis, pretty patterns for sisters and
+              little ones, and quick, beautiful designs for every guest at your wedding functions.
+            </p>
+            <div class="btn-open-album">
+              <span>Open Photo Album</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section id="about" class="why-us-section">
+      <div class="why-us-container">
+        <div class="why-us-left">
+          <h2>Why Choose <br /><span>Anil Bridal Mehendi?</span></h2>
+          <p>
+            Heritage artistry, precision lines, and deep organic stains crafted with 100% natural cones.
+          </p>
+          <a
+            href="https://www.instagram.com/anil_bridalmehendiartist/?hl=en"
+            target="_blank"
+            class="btn-gold"
+            style="padding: 10px 22px; font-size: 0.88rem"
+          >
+            <i class="fa-brands fa-instagram"></i> Follow on Instagram
+          </a>
+        </div>
+
+        <div class="why-us-grid">
+          <div class="why-feature">
+            <div class="why-feature-icon"><i class="fa-solid fa-plane-departure"></i></div>
+            <h4>Pan-India Travel</h4>
+            <p>Direct to your venue across India & worldwide.</p>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon"><i class="fa-solid fa-gem"></i></div>
+            <h4>Fine Artistry</h4>
+            <p>Traditional Rajasthani & modern figures.</p>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon"><i class="fa-solid fa-shield-heart"></i></div>
+            <h4>Natural Henna</h4>
+            <p>Chemical-free cones with dark stain guarantee.</p>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon"><i class="fa-solid fa-heart"></i></div>
+            <h4>Punctual Team</h4>
+            <p>Dedicated support for high-volume weddings.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destination Services Section -->
+    <section id="destination" class="destination-section">
+      <div class="destination-container">
+        <div>
+          <span class="dest-title-script">Destination</span>
+          <h2 class="dest-title">Wedding Henna</h2>
+          <p class="dest-desc">
+            From palace getaways in Udaipur & Jaipur to grand exotic destination weddings
+            in Goa, Dubai, and beyond—my team travels directly to your celebrations.
+          </p>
+
+          <ul class="dest-features-list">
+            <li><i class="fa-solid fa-champagne-glasses"></i> Royal Palaces</li>
+            <li><i class="fa-solid fa-hotel"></i> Destination Venues</li>
+            <li><i class="fa-solid fa-umbrella-beach"></i> Luxury Resorts</li>
+            <li><i class="fa-solid fa-passport"></i> Global Travel</li>
+          </ul>
+
+          <a
+            href="https://wa.me/917508462053?text=Hi%20Anil%20Ji,%20I%20want%20to%20plan%20Destination%20Mehendi%20services."
+            target="_blank"
+            class="btn-gold"
+          >
+            Plan Destination Event <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="dest-visual-wrap">
+          <img
+            class="dest-main-img"
+            src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80"
+            alt="Palace Wedding"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="section-header">
+        <span class="section-subtitle">Client Love</span>
+        <h2 class="section-title">What Brides Say</h2>
+        <div class="divider-motif"><span></span>❖<span></span></div>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <img class="client-avatar" src="photo/review1.png" alt="Priya Sharma" />
+          <div>
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="client-text">
+              "Anil ji travelled to Udaipur for our wedding. The bridal figurines and stain were breathtaking!"
+            </p>
+            <div class="client-name">Priya Sharma</div>
+            <div class="client-role">Destination Bride</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <img class="client-avatar" src="photo/review2.png" alt="Ritika Mehta" />
+          <div>
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="client-text">
+              "The party mehendi was so neat, patient, and modern. The stain turned deep mahogany naturally!"
+            </p>
+            <div class="client-name">Ritika Mehta</div>
+            <div class="client-role">Engagement & Bridal</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <img class="client-avatar" src="photo/review3.png" alt="Neha Singh" />
+          <div>
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="client-text">
+              "His team managed all 100+ guests with such speed and grace. Everyone loved their henna!"
+            </p>
+            <div class="client-name">Neha Singh</div>
+            <div class="client-role">Wedding Client</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         BOOKING SECTION (SERVICE TYPE REMOVED)
+         ======================================================== -->
+    <section id="book" class="booking-section">
+      <div class="booking-card-wrapper">
+        <div>
+          <div class="booking-header">
+            <h3>Direct Booking Inquiry</h3>
+            <p>Fill in your event details to send a direct WhatsApp inquiry.</p>
+          </div>
+
+          <form class="booking-form" id="bookingForm" onsubmit="handleBooking(event)">
+            <div class="input-group">
+              <label for="clientName"><i class="fa-regular fa-user"></i> Your Name</label>
+              <input
+                type="text"
+                id="clientName"
+                placeholder="e.g. Ananya Roy"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="eventDate"><i class="fa-regular fa-calendar"></i> Event Date</label>
+              <input type="date" id="eventDate" required />
+            </div>
+
+            <div class="input-group" style="grid-column: span 2">
+              <label for="location"><i class="fa-solid fa-map-pin"></i> City / Venue Destination</label>
+              <input
+                type="text"
+                id="location"
+                placeholder="e.g. Jaipur, Delhi, Udaipur, Goa"
+                required
+              />
+            </div>
+
+            <div class="booking-btn-wrap">
+              <button type="submit" class="btn-submit-wa">
+                <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem"></i>
+                Send Instant WhatsApp Inquiry
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="booking-side-quote">
+          <h4>Handcrafted Henna</h4>
+          <p>Made With Love</p>
+          <div style="color: var(--gold-primary); font-size: 1.2rem; margin-top: 8px">♥</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="footer-content">
+        <div class="logo-container">
+          <span class="logo-main" style="font-size: 2.8rem">Anil</span>
+          <span class="logo-sub" style="font-size: 0.75rem; letter-spacing: 4px">Bridal Mehendi Artist</span>
+        </div>
+
+        <div class="footer-phones">
+          <a href="tel:+917508462053" class="footer-phone-badge">
+            <i class="fa-solid fa-phone"></i> +91 75084 62053
+          </a>
+          <a href="tel:+917508465231" class="footer-phone-badge">
+            <i class="fa-solid fa-phone"></i> +91 75084 65231
+          </a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://www.instagram.com/anil_bridalmehendiartist/?hl=en" target="_blank" class="social-btn" title="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.threads.com/@anil_bridalmehendiartist" target="_blank" class="social-btn" title="Threads">
+            <i class="fa-brands fa-threads"></i>
+          </a>
+          <a href="https://wa.me/917508462053" target="_blank" class="social-btn" title="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="https://www.facebook.com/people/Anil-Bridal-Mehandi-Artist/100069219829060/" target="_blank" class="social-btn" title="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.youtube.com/@AnilBridalMehandiArtist" target="_blank" class="social-btn" title="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Anil Bridal Mehendi Artist. All rights reserved.</div>
+        <div>Pan-India & Worldwide Destination Weddings</div>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp Action -->
+    <a
+      href="https://wa.me/917508462053?text=Hi%20Anil%20Ji,%20I%20am%20interested%20in%20booking%20your%20mehendi%20services."
+      class="floating-wa"
+      target="_blank"
+      title="Chat on WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- ========================================================
+         MODERN VISUAL PHOTO ALBUM MODAL (NO TEXT CLUTTER)
+         ======================================================== -->
+    <div id="albumGalleryModal" class="album-gallery-modal">
+      <!-- Sticky Bar -->
+      <div class="album-header-bar">
+        <button class="album-back-btn" onclick="closeAlbumGallery()">
+          <i class="fa-solid fa-arrow-left"></i> Back
+        </button>
+        <span class="album-title-text" id="albumHeaderTitle">Bridal Mehendi Album</span>
+        <button class="album-close-x" onclick="closeAlbumGallery()" title="Close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="album-container">
+        <!-- Collection Switcher -->
+        <div class="album-switcher">
+          <div class="album-switch-pill">
+            <button
+              class="album-switch-btn active"
+              id="switchBridalBtn"
+              onclick="switchAlbumCategory('bridal')"
+            >
+              Bridal Mehendi
+            </button>
+            <button
+              class="album-switch-btn"
+              id="switchPartyBtn"
+              onclick="switchAlbumCategory('party')"
+            >
+              Party Mehendi
+            </button>
+            <button
+              class="album-switch-btn"
+              id="switchFamilyBtn"
+              onclick="switchAlbumCategory('family')"
+            >
+              Family Mehendi
+            </button>
+          </div>
+        </div>
+
+        <!-- 20+ Photos Album Grid (Clean, like reference photo) -->
+        <div class="photo-album-grid" id="photoAlbumGrid">
+          <!-- Injected dynamically via JS -->
+        </div>
+
+        <!-- WhatsApp Inquire Card -->
+        <div class="album-cta-box">
+          <h4>Like Any Of These Designs?</h4>
+          <p>Send an inquiry to Anil Ji directly on WhatsApp to check availability.</p>
+          <a
+            id="albumWhatsAppBtn"
+            href="https://wa.me/917508462053"
+            target="_blank"
+            class="btn-gold"
+          >
+            <i class="fa-brands fa-whatsapp"></i> Inquire On WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================
+         INTERACTIVE HIGH-RES ZOOM LIGHTBOX
+         ======================================================== */ -->
+    <div id="imageLightbox" class="lightbox-modal" onclick="closeLightbox()">
+      <!-- Top Bar -->
+      <div class="lb-top-bar" onclick="event.stopPropagation()">
+        <span class="lb-counter" id="lbCounter">Photo 1 of 22</span>
+        <div class="lb-controls">
+          <button class="lb-btn" title="Zoom In" onclick="zoomIn()"><i class="fa-solid fa-plus"></i></button>
+          <button class="lb-btn" title="Zoom Out" onclick="zoomOut()"><i class="fa-solid fa-minus"></i></button>
+          <button class="lb-btn" title="Reset" onclick="resetZoom()"><i class="fa-solid fa-compress"></i></button>
+          <button class="lb-btn" title="Close" onclick="closeLightbox()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+
+      <!-- Viewport Stage -->
+      <div class="lb-viewport" onclick="event.stopPropagation()">
+        <div class="lb-nav lb-nav-prev" onclick="prevLightboxImage()">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="lb-nav lb-nav-next" onclick="nextLightboxImage()">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+        <div class="lb-img-wrap" id="lbImgWrap" onclick="toggleZoom()">
+          <img id="lightboxImg" src="" alt="Mehendi Album Zoom" />
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="lb-bottom-bar" onclick="event.stopPropagation()">
+        <a id="lightboxWaBtn" href="#" target="_blank" class="lb-wa-inquire">
+          <i class="fa-brands fa-whatsapp"></i> Inquire This Design On WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <!-- JavaScript Application Controller -->
+    <script>
+      // Mobile Navigation
+      const mobileToggle = document.getElementById("mobileToggle");
+      const navMenu = document.getElementById("navMenu");
+      mobileToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+      document.querySelectorAll("#navMenu a").forEach((link) => {
+        link.addEventListener("click", () => navMenu.classList.remove("active"));
+      });
+
+      // WhatsApp Booking (Service Type completely removed)
+      function handleBooking(event) {
+        event.preventDefault();
+        const name = document.getElementById("clientName").value.trim();
+        const date = document.getElementById("eventDate").value;
+        const location = document.getElementById("location").value.trim();
+
+        const message =
+          `*Mehendi Booking Inquiry for Anil Ji*%0A` +
+          `--------------------------------------%0A` +
+          `*Name:* ${encodeURIComponent(name)}%0A` +
+          `*Event Date:* ${encodeURIComponent(date)}%0A` +
+          `*City / Venue:* ${encodeURIComponent(location)}%0A` +
+          `--------------------------------------%0A` +
+          `Please share your availability and package details.`;
+
+        const whatsappURL = `https://wa.me/917508462053?text=${message}`;
+        window.open(whatsappURL, "_blank");
+      }
+
+      /* ========================================================
+         20+ IMAGES DATASETS (PURE PHOTO ALBUM)
+         ======================================================== */
+      const albumData = {
+        bridal: {
+          label: "Bridal",
+          title: "Bridal Mehendi Album (Dulhan Hands & Feet)",
+          waQuery: "Hi Anil Ji, I am looking to book Bridal Mehendi for my wedding.",
+          images: [
+            "photo/b1.jpg",
+            "photo/b2.jpg",
+            "photo/b3.jpg",
+            "photo/b4.jpg",
+            "photo/b5.jpg",
+            "photo/b6.jpg",
+            "photo/b7.jpg",
+            "photo/b8.jpg",
+            "photo/b9.jpg",
+            "photo/b10.jpg",
+            "photo/b11.jpg",
+            "photo/b12.jpg",
+            "photo/b13.jpg",
+            "photo/b14.jpg",
+            "photo/b15.jpg",
+            "photo/p32.jpg",
+            "photo/p33.jpg",
+            "photo/p34.jpg",
+            "photo/p35.jpg",
+            "photo/p1.png",
+            "photo/p2.jpg",
+            "photo/p3.jpg",
+            "photo/p4.jpg",
+            "photo/p6.jpg",
+            "photo/p24.jpg",
+            "photo/p25.jpg",
+            "photo/p26.jpg",
+            "photo/p27.jpg"
+          ]
+        },
+        party: {
+          label: "Party",
+          title: "Party Mehendi Album (Engagement, Sangeet & Festive)",
+          waQuery: "Hi Anil Ji, I am looking to book Party Mehendi (Engagement / Sangeet / Festive) for my event.",
+          images: [
+            "photo/p7.jpeg",
+            "photo/p8.jpeg",
+            "photo/p9.jpeg",
+            "photo/p11.jpeg",
+            "photo/p15.jpeg",
+            "photo/p16.jpeg",
+            "photo/p18.jpeg",
+            "photo/p19.jpeg",
+            "photo/p20.jpeg",
+            "photo/p21.jpeg",
+            "photo/p22.png",
+            "photo/p36.jpeg",
+            "photo/p37.jpeg",
+            "photo/p38.jpeg",
+            "photo/p39.jpeg",
+            "photo/p40.jpeg",
+            "photo/p41.jpeg",
+            "photo/p42.jpeg",
+            "photo/p43.jpeg",
+            "photo/p44.jpeg",
+            "photo/p45.jpeg",
+            "photo/p46.jpeg",
+            "photo/p47.jpeg"
+          ]
+        },
+        family: {
+          label: "Family",
+          title: "Family Mehendi Album (Mothers, Sisters & Guests)",
+          waQuery: "Hi Anil Ji, I am looking to book Family & Guest Mehendi for our wedding event.",
+          images: [
+            "photo/f4.jpeg",
+            "photo/f5.jpeg",
+            "photo/f6.jpeg",
+            "photo/f7.jpeg",
+            "photo/f8.jpeg",
+            "photo/f9.jpeg",
+            "photo/f10.jpeg",
+            "photo/f11.jpeg",
+            "photo/f12.jpeg",
+            "photo/f13.jpeg",
+            "photo/f14.jpeg",
+            "photo/f15.jpeg",
+            "photo/f16.jpeg",
+            "photo/f17.jpeg",
+            "photo/f19.jpeg",
+            "photo/f21.jpeg",
+            "photo/f23.jpeg",
+            "photo/f30.png",
+            "photo/f31.png",
+            "photo/f32.png",
+            "photo/f33.png",
+            "photo/f34.png",
+            "photo/f35.png"
+          ]
+        }
+      };
+
+      let currentAlbum = "bridal";
+      let activeImageIndex = 0;
+      let zoomLevel = 1;
+
+      /* Album Open & Close Handlers */
+      function openAlbumGallery(category) {
+        currentAlbum = albumData[category] ? category : "bridal";
+        renderAlbum();
+        document.getElementById("albumGalleryModal").classList.add("active");
+        document.body.classList.add("modal-open");
+        history.pushState({ modal: "album", category: currentAlbum }, "", `#album-${currentAlbum}`);
+      }
+
+      function closeAlbumGalleryUI() {
+        document.getElementById("albumGalleryModal").classList.remove("active");
+        document.body.classList.remove("modal-open");
+        const sec = document.getElementById("services");
+        if (sec) sec.scrollIntoView({ behavior: "smooth" });
+      }
+
+      function closeAlbumGallery() {
+        if (window.location.hash.startsWith("#album-") || (history.state && history.state.modal === "album")) {
+          history.back();
+        } else {
+          closeAlbumGalleryUI();
+        }
+      }
+
+      function switchAlbumCategory(category) {
+        currentAlbum = category;
+        renderAlbum();
+        history.replaceState({ modal: "album", category: currentAlbum }, "", `#album-${currentAlbum}`);
+      }
+
+      function renderAlbum() {
+        const data = albumData[currentAlbum];
+        if (!data) return;
+
+        document.getElementById("albumHeaderTitle").textContent = data.title;
+        document.getElementById("switchBridalBtn").classList.toggle("active", currentAlbum === "bridal");
+        document.getElementById("switchPartyBtn").classList.toggle("active", currentAlbum === "party");
+        document.getElementById("switchFamilyBtn").classList.toggle("active", currentAlbum === "family");
+
+        const waLink = `https://wa.me/917508462053?text=${encodeURIComponent(data.waQuery)}`;
+        document.getElementById("albumWhatsAppBtn").href = waLink;
+
+        const grid = document.getElementById("photoAlbumGrid");
+        grid.innerHTML = "";
+
+        // Build clean visual album cards (like the reference photo)
+        data.images.forEach((imgSrc, idx) => {
+          const item = document.createElement("div");
+          item.className = "album-photo-item";
+          item.style.animationDelay = `${(idx * 0.035).toFixed(2)}s`;
+          item.innerHTML = `
+            <img src="${imgSrc}" alt="Mehendi Design Photo" loading="lazy" />
+            <div class="album-photo-overlay">
+              <div class="album-zoom-icon">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </div>
+            </div>
+          `;
+          item.onclick = () => openLightbox(idx);
+          grid.appendChild(item);
+        });
+      }
+
+      /* ========================================================
+         LIGHTBOX ZOOM CONTROLLER
+         ======================================================== */
+      function openLightbox(index) {
+        activeImageIndex = index;
+        resetZoom();
+        updateLightbox();
+        document.getElementById("imageLightbox").classList.add("active");
+        history.pushState({ modal: "lightbox" }, "", "#zoom");
+      }
+
+      function updateLightbox() {
+        const images = albumData[currentAlbum].images;
+        const currentSrc = images[activeImageIndex];
+
+        document.getElementById("lightboxImg").src = currentSrc;
+        document.getElementById("lbCounter").textContent = `Photo ${activeImageIndex + 1} of ${images.length}`;
+
+        const msg = `Hi Anil Ji, I loved this design from your ${albumData[currentAlbum].label} Mehendi album (Photo #${activeImageIndex + 1}). Is this available for my date?`;
+        document.getElementById("lightboxWaBtn").href = `https://wa.me/917508462053?text=${encodeURIComponent(msg)}`;
+      }
+
+      function nextLightboxImage() {
+        const images = albumData[currentAlbum].images;
+        activeImageIndex = (activeImageIndex + 1) % images.length;
+        resetZoom();
+        updateLightbox();
+      }
+
+      function prevLightboxImage() {
+        const images = albumData[currentAlbum].images;
+        activeImageIndex = (activeImageIndex - 1 + images.length) % images.length;
+        resetZoom();
+        updateLightbox();
+      }
+
+      function zoomIn() {
+        if (zoomLevel < 3) {
+          zoomLevel += 0.4;
+          applyZoom();
+        }
+      }
+
+      function zoomOut() {
+        if (zoomLevel > 0.8) {
+          zoomLevel -= 0.4;
+          applyZoom();
+        }
+      }
+
+      function resetZoom() {
+        zoomLevel = 1;
+        applyZoom();
+      }
+
+      function toggleZoom() {
+        zoomLevel = zoomLevel === 1 ? 2 : 1;
+        applyZoom();
+      }
+
+      function applyZoom() {
+        const img = document.getElementById("lightboxImg");
+        const wrap = document.getElementById("lbImgWrap");
+        img.style.transform = `scale(${zoomLevel})`;
+        wrap.classList.toggle("is-zoomed", zoomLevel > 1);
+      }
+
+      function closeLightboxUI() {
+        document.getElementById("imageLightbox").classList.remove("active");
+        resetZoom();
+      }
+
+      function closeLightbox() {
+        if (window.location.hash === "#zoom" || (history.state && history.state.modal === "lightbox")) {
+          history.back();
+        } else {
+          closeLightboxUI();
+        }
+      }
+
+      /* Browser Navigation & Popstate */
+      window.addEventListener("popstate", () => {
+        const lb = document.getElementById("imageLightbox");
+        const albumModal = document.getElementById("albumGalleryModal");
+
+        if (lb.classList.contains("active")) {
+          closeLightboxUI();
+          return;
+        }
+
+        if (albumModal.classList.contains("active")) {
+          if (window.location.hash.startsWith("#album-")) {
+            const cat = window.location.hash.replace("#album-", "");
+            if (albumData[cat]) {
+              currentAlbum = cat;
+              renderAlbum();
+            }
+          } else {
+            closeAlbumGalleryUI();
+          }
+        }
+      });
+
+      // Keyboard Controls
+      document.addEventListener("keydown", (e) => {
+        const lb = document.getElementById("imageLightbox");
+        if (lb.classList.contains("active")) {
+          if (e.key === "Escape") closeLightbox();
+          if (e.key === "ArrowRight") nextLightboxImage();
+          if (e.key === "ArrowLeft") prevLightboxImage();
+          if (e.key === "+" || e.key === "=") zoomIn();
+          if (e.key === "-") zoomOut();
+        } else if (e.key === "Escape") {
+          closeAlbumGallery();
+        }
+      });
+    </script>
+  </body>
+</html>
